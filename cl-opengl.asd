@@ -46,5 +46,4 @@
      (:file "framebuffer" :depends-on ("funcs" "util"))
      (:file "special" :depends-on ("funcs" "util" "constants"))
      (:file "state" :depends-on ("funcs" "util"))
-     (:file "extensions" :depends-on ("funcs" "util"))
-     (:file "gl-arrays" :depends-on ("funcs" "util" "types"))))))
+     (:file "extensions" :depends-on ("funcs" "util"))))))
