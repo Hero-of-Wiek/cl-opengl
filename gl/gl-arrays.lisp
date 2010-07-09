@@ -10,9 +10,6 @@
   (nutils:once-only (values)
     `(with-gl-array (,var ,type :count (or ,count (length ,values)))
        (setf (get-arrays ,var ,components) ,values)
-       ;; Might want to have something that lets us bind stuff
-       ;;automatically in teh arglists, but not a top priority.
-       ;;(bind-gl-vertex-array ,var)
        ,@body)))
 
 (defun get-array (gl-vector &optional (index 0) components)
