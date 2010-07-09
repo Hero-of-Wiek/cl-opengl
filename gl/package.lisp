@@ -351,4 +351,8 @@
    #:framebuffer-texture-3d-ext
    #:framebuffer-renderbuffer-ext
    #:generate-mipmap-ext
+   ;; GL Array functions added by the HoW team
+   #:get-array
+   #:get-arrays
+   #:with-gl-array-values
    ))
