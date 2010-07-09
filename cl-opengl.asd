@@ -27,7 +27,7 @@
 ;;; ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 ;;; POSSIBILITY OF SUCH DAMAGE.
 
-(defsystem cl-opengl
+(asdf:defsystem cl-opengl
   :depends-on (cffi)
   :components
   ((:module "gl"
@@ -46,4 +46,5 @@
      (:file "framebuffer" :depends-on ("funcs" "util"))
      (:file "special" :depends-on ("funcs" "util" "constants"))
      (:file "state" :depends-on ("funcs" "util"))
-     (:file "extensions" :depends-on ("funcs" "util"))))))
+     (:file "extensions" :depends-on ("funcs" "util"))
+     (:file "gl-arrays" :depends-on ("opengl"))))))
