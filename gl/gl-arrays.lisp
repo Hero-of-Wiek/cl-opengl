@@ -1,8 +1,5 @@
 (in-package :gl)
 
-(define-gl-array-format vertex
-  (vertex :type :float :components (x y z)))
-
 (defmacro with-gl-array-values ((var type &optional components count) values
                                 &body body)
   ;; Might want to make it so component types can nest:
